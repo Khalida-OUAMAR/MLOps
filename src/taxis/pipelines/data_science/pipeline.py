@@ -1,6 +1,6 @@
-from kedro.pipeline import Pipeline, node 
+from kedro.pipeline import Pipeline, node
 
-from .nodes import train_model#, evaluate,predict
+from .nodes import train_model  # , evaluate,predict
 
 
 def create_pipeline(**kwargs):
@@ -10,7 +10,7 @@ def create_pipeline(**kwargs):
                 train_model,
                 ["train_x", "train_y", "test_x", "parameters"],
                 "model",
-                name="train"
+                name="train",
             )
             # node(
             #     evaluate,
