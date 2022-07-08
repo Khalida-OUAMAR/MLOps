@@ -6,3 +6,23 @@
 dataset_taxis:
   type: kedro.extras.datasets.pandas.ParquetDataSet
   filepath: data/01_raw/yellow_tripdata_2013-01.parquet
+
+# train_x:
+#   type: kedro.extras.datasets.pandas.CSVDataSet
+#   filepath: data/05_model_input/X_train.csv
+
+# train_y:
+#   type: kedro.extras.datasets.pandas.CSVDataSet
+#   filepath: data/05_model_input/y_train.csv
+
+# test_x:
+#   type: kedro.extras.datasets.pandas.CSVDataSet
+#   filepath: data/05_model_input/X_test.csv
+
+# test_y:
+#   type: kedro.extras.datasets.pandas.CSVDataSet
+#   filepath: data/05_model_input/y_test.csv
+
+# model:
+#   type: kedro.extras.datasets.pickle.PickleDataSet
+#   filepath: data/06_models/model.pkl

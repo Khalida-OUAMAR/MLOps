@@ -1,3 +1,6 @@
 n_estimators: 10
 max_depth: 20 
 verbosity: 2
+mlflow_enabled: True
+mlflow_experiment_id: 0
+mlflow_model_registry: "Taxis"
