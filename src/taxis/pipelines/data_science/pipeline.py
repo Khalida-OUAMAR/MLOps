@@ -1,6 +1,6 @@
 from kedro.pipeline import Pipeline, node
 
-from .nodes import train_model, auto_ml# , evaluate,predict
+from .nodes import train_model, auto_ml  # , evaluate,predict
 
 
 def create_pipeline(**kwargs):
@@ -14,9 +14,9 @@ def create_pipeline(**kwargs):
             ),
             node(
                 auto_ml,
-                ["model", "params:mlflow_enabled","params:mlflow_experiment_id"],
+                ["model", "params:mlflow_enabled", "params:mlflow_experiment_id"],
                 "mlflow_run_id",
-                name="automl"
-            )
+                name="automl",
+            ),
         ]
     )

@@ -3,8 +3,10 @@ from typing import Any, Dict
 from xgboost import XGBRegressor
 import mlflow
 import os
-# import pickle 
+
+# import pickle
 # from datetime import datetime
+
 
 def train_model(
     train_x: pd.DataFrame,
@@ -30,11 +32,8 @@ def train_model(
     return model
 
 
-
 def auto_ml(
-    model: XGBRegressor,
-    log_to_mlflow: bool = False,
-    experiment_id: int = -1
+    model: XGBRegressor, log_to_mlflow: bool = False, experiment_id: int = -1
 ) -> str:
 
     run_id = ""
